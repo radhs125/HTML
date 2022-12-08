@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head><title>file1</title>
+<style>* {
+  box-sizing: border-box;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+  h2{
+  font-family: "Lucida Console";
+  font-size: 38px;
+}
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}</style></head>
+<body>
+    <div class="container">
+        <div style="text-align:center">
+          <h2><b><u>Registration Page</h2></b></u>
+           
+        </div>
+        <div class="row">
+          <div class="column">
+                 </div>
+          <div class="column">
+            <form action="/action_page.php">
+      <label for="fname">First Name</label>
+              <input type="text" id="fname" name="name" placeholder="Your name..">
+              <label for="lname">Mobile Number</label> 
+              <select id="num" >
+              <option data-countryCode="IN" value="91"> IN(+91)</option>
+              <option data-countryCode="US" value="213">US(+1)</option>
+              <option data-countryCode="DZ" value="213">DZ(+213)</option>
+              <option data-countryCode="AD" value="376"> AD(+376)</option>
+          <option data-countryCode="AO" value="244">AO(+244)</option>
+          <option data-countryCode="AI" value="1264">AI(+1264)</option>
+              </select>   
+              <input type="text" name="phone" placeholder="enter your mobile number" size="10"/> <br> <br> 
+              <label for="email">Email</label> 
+              <input type="text" id="email" name="email" placeholder="email address.."> 
+              <label for="event">Event</label>
+              <select id="event" name="event" placeholder="your event">
+                              <option value="your event">
+                              <option value=" wedding">Wedding </option>
+                <option value="birthday parties">Birthday parties</option>
+                <option value="baby shower">Baby shower</option>
+                <option value="proposal surperises"> proposal surperises</option>
+                <option value="betrothal">betrothal</option>
+                <option value=" house warming">house warming</option>
+                              </select>
+              <label for="subject">Address
+              </label>
+              <textarea id="subject" name="subject" placeholder="address.." style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+       
+</body>
+</html>
